@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+    }
+
+    .whole {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .name {
+      color: whitesmoke;
+    }
+
+    h1 {
+      font-family: fantasy;
+      font-weight: 100;
+      font-size: 3rem;
+    }
+
+    .container {
+      background-color: black;
+      display: grid;
+      width: 748px;
+      height: 748px;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .blue {
+      background-color: #004592;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .a {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    .b {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    .c {
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .d {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .e {
+      border-bottom: 10px solid #000;
+    }
+
+    .g {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    .f {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .i {
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-color: #000;
+      }
+
+      .container {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        background-color: #000;
+      }
+
+      .container {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="whole">
+    <!-- Write your HTML here -->
+    <div class="name">
+      <h1>Mondrian Art</h1>
+    </div>
+    <div class="container">
+      <div class="a red"></div>
+      <div class="b white"></div>
+      <div class="c white"></div>
+      <div class="d white"></div>
+      <div class="e blue"></div>
+      <div class="f white"></div>
+      <div class="g yellow"></div>
+      <div class="h black"></div>
+      <div class="i white"></div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
